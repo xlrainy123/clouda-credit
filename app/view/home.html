@@ -1,0 +1,20 @@
+{{> header}}
+<block tpl-id="homeBlock">
+{{#if isShow}}
+	<section class="addlist">
+		<ul>
+			<li><span id="welcomeMessage">欢迎您使用CloudajsCMS系统...</span></li>
+		</ul>
+	</section>
+	<section class="list">
+		<ul>
+			<li><a href="javascript:void(0)" onclick="dispatch('category')">栏目管理</a></li>
+			<li><a href="javascript:void(0)" onclick="dispatch('article')">文章管理</a></li>
+			<li><a href="javascript:void(0)" onclick="dispatch('changepassword')">用户设置</a></li>
+			<li><a href="javascript:void(0)" onclick="dispatch('system')">系统设置</a></li>
+			<li><a href="javascript:void(0)" id="logoutBtn">安全退出</a></li>
+		</ul>
+	</section>
+{{/if}}
+</block>
+{{> footer}}

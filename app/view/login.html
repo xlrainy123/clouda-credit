@@ -1,0 +1,19 @@
+{{> header}}
+<block tpl-id="loginBlock">
+{{#if isShow}}
+	<section class="addlist">
+		<ul>
+			<li><span>用户名:</span></li>
+			<li><input type="text" id="username" placeholder="请输入您的密码" name="username" autocomplete="off"/></li>
+			<li><span>密码:</span></li>
+			<li><input type="password" id="password" placeholder="请输入您的密码" name="username" autocomplete="off"/></li>
+			<li><span><b id='loginMessage'></b></span></li>
+		</ul>
+	</section>
+	<section class="alink">
+		<p class="x"><a href="javascript:void(0)" id="loginBtn">登录</a></p>
+		<p class="y"><a href="javascript:void(0)" id='loginCancel'>取消</a></p>
+	</section>
+{{/if}}
+</block>
+{{> footer}}
